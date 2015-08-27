@@ -100,7 +100,10 @@ public class DollarAmountToString {
                 String digits = numToString.get(digit);
                 int remainder = (int) (beforeDecimal / 10);
                 String tens = numToString.get(remainder * 10);
-                strBeforeDecimal += tens + "-" + digits;
+                strBeforeDecimal += tens;
+                if (digits != null && !digits.equals("0")) {
+                    strBeforeDecimal += "-" + digits;
+                }
 
             }
 
