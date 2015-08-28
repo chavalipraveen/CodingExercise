@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite1">
+  <test verbose="1" name="Test10">
+    <classes>
+      <class name="test.PrintSpiralTest"/>
+	  <parameter name="myNum" value="10"/>
+    </classes>
+  </test> <!-- Test with input 10 -->
+  <test verbose="1" name="Test0">
+    <classes>
+      <class name="test.PrintSpiralTest"/>
+	  <parameter name="myNum" value="0"/>
+    </classes>
+  </test> <!-- Test with input 0 -->
+  <test verbose="1" name="Test1">
+    <classes>
+      <class name="test.PrintSpiralTest"/>
+	  <parameter name="myNum" value="1"/>
+    </classes>
+  </test> <!-- Test with input 1 -->
+  <test verbose="1" name="Test2">
+    <classes>
+      <class name="test.PrintSpiralTest"/>
+	  <parameter name="myNum" value="2"/>
+    </classes>
+  </test> <!-- Test with input 2 -->
+  <test verbose="1" name="Test32">
+    <classes>
+      <class name="test.PrintSpiralTest"/>
+	  <parameter name="myNum" value="32"/>
+    </classes>
+  </test> <!-- Test with input 32 -->
+  <test verbose="1" name="Test80">
+    <classes>
+      <class name="test.PrintSpiralTest"/>
+	  <parameter name="myNum" value="80"/>
+    </classes>
+  </test> <!-- Test with input 80 -->
+  <test verbose="1" name="Test1000">
+    <classes>
+      <class name="test.PrintSpiralTest"/>
+	  <parameter name="myNum" value="1000"/>
+    </classes>
+  </test> <!-- Test with input 1000 -->
+</suite> <!-- Suite1 -->
