@@ -1,3 +1,5 @@
+package code.exercise;
+
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
@@ -34,6 +36,11 @@ public class SpiralPrint {
             System.out.println("Nothing to print!");
             return;
         }
+
+        new SpiralPrint().spiralPrint(numToPrint);
+    }
+
+    public void spiralPrint(int numToPrint) {
         /**
          * We first prepare a matrix to hold the spiral elements (spiralPrepare)
          * Some rules for the matrix:
@@ -74,12 +81,12 @@ public class SpiralPrint {
         for (int i = 0; i < numLevels; i++) {
             for (int j = 0; j < numLevels; j++) {
                 if (a[i][j] != -1) {
-                    System.out.print(a[i][j] + "\t");
+                    System.out.print(a[i][j]);
                 }
+                System.out.print("\t");
             }
             System.out.println();
         }
-
     }
 
     /**
